@@ -2,6 +2,9 @@ import numpy as np
 import asyncio
 import mavsdk
 import time
+
+from sensor_hub              import SensorHub
+from data_hub                import DataHub
 from lib.trajectory_tracking import TrajectoryTracker
 from lib.postion_estmation   import ArUcoPosEstimator
 from lib.lidar_processor     import LiDARProcessor 
