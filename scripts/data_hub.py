@@ -263,8 +263,6 @@ class DataHub:
 
         self.jps_map = np.array([])
         
-        ###### search marker on veranda #####
-
         ##### veranda mean position #####
         self.vox_n = None
         self.vox_e = None
@@ -273,3 +271,16 @@ class DataHub:
 
         self.cross_marker = np.array([])
         self.cross_marker_detected = False 
+
+        #for perfect circle move
+        self.circle_yaw_angle          = None
+        self.circle_radius             = None
+        self.circle_move_degree        = None
+
+        #move toward marker#
+        self.cross_marker                   = np.array([])
+        self.cross_marker_detected          = False 
+
+        self.first_marker_detected_angle    = None
+        self.last_marker_detected_angle     = None
+        self.height = 10
